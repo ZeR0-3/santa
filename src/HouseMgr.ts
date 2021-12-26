@@ -5,7 +5,7 @@ export class HouseMgr{
     private isPushnextHouse: boolean = true;
     private _scene: g.Scene = null;
     private _entFactry: EntFactory = null;
-    constructor(scene: g.Scene, iSceneParam: ISceneParam){
+    constructor(scene: g.Scene){
         this._scene = scene;
         this._entFactry = new EntFactory(scene);
         // this._entFactry = iSceneParam.entFactory;

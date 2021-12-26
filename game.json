@@ -80,6 +80,41 @@
 			"type": "script",
 			"path": "script/HouseMgr.js",
 			"global": true
+		},
+		"ExtGE": {
+			"type": "script",
+			"path": "script/ExtGE.js",
+			"global": true
+		},
+		"ISceneParam": {
+			"type": "script",
+			"path": "script/ISceneParam.js",
+			"global": true
+		},
+		"IgE": {
+			"type": "script",
+			"path": "script/IgE.js",
+			"global": true
+		},
+		"SnataScene": {
+			"type": "script",
+			"path": "script/MyScene/SnataScene.js",
+			"global": true
+		},
+		"MyExtSceneParameterObject": {
+			"type": "script",
+			"path": "script/MyScene/MyExtSceneParameterObject.js",
+			"global": true
+		},
+		"AbsExtScene": {
+			"type": "script",
+			"path": "script/MyScene/AbsExtScene.js",
+			"global": true
+		},
+		"SantaScene2": {
+			"type": "script",
+			"path": "script/MyScene/SantaScene2.js",
+			"global": true
 		}
 	},
 	"moduleMainScripts": {},
