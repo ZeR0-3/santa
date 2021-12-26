@@ -115,6 +115,11 @@
 			"type": "script",
 			"path": "script/MyScene/SantaScene2.js",
 			"global": true
+		},
+		"assetids": {
+			"type": "script",
+			"path": "script/assetids.js",
+			"global": true
 		}
 	},
 	"moduleMainScripts": {},

@@ -1,4 +1,5 @@
 import { DynamicAssetConfiguration, HandlerFunction, Scene, SceneParameterObject } from "@akashic/akashic-engine";
+import { santaAssetsIds } from "../assetids";
 import { EntFactory } from "../EntFactory";
 import { HouseMgr } from "../HouseMgr";
 import { RPGAtsumaruWindow } from "../parameterObject";
@@ -6,21 +7,32 @@ import { AbsExtScene } from "./AbsExtScene";
 import { MyExtSceneParameterObject } from "./MyExtSceneParameterObject";
 
 export class SantaScene2 extends AbsExtScene {
+    
+    protected stateSceneName: string[];
     protected assetIds: (string | DynamicAssetConfiguration)[];
     constructor(param: MyExtSceneParameterObject){
         
         super(param);
-        this.scene = new g.Scene(param as SceneParameterObject);
-        this.window = param.window;
-        this.time = param.time;
-        this.isAtumaru = param.isAtumaru;
+        // this.scene = new g.Scene(param as SceneParameterObject);
+        // this.window = param.window;
+        // this.time = param.time;
+        // this.isAtumaru = param.isAtumaru;
         this.setOnLoadAdd(this.onLoadAdd);
         
+    }
+    protected setAssetsIds(): string[] {
+        return santaAssetsIds;
     }
 
     // private setOnLoadAdd(_fnc: () => void): void {
     //     this.scene.onLoad.add(this.onLoadAdd);
     // }
+
+    protected createStateScene = () => {
+
+
+
+    }
 
     onLoadAdd = ():void => {
 		// ここからゲーム内容を記述します
